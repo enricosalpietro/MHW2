@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    background-color: rgb(131, 27, 27);
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+  position: relative;
+  color: white;
+  background-image: url(https://user-images.githubusercontent.com/79899428/112143793-aa392280-8bd8-11eb-9b6a-162bf1254903.png);
+  height: 250px;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+    
+  display: flex;
+  flex-direction: column;     
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 0.9em;
+    height: 350px;
+    line-height: 1.2;
+    width: 100%;
+  }
+}
+
+a {
+  font-size: 1.6em;
+  color: red;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold; 
+  text-transform: uppercase;
+}
+
+header a{  
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-shadow: 0.5px 1px royalblue;
+}
+
+#logo img{
+  width: 400px;
+}
+
+@media (max-width: 500px) {
+  #logo img{
+    width: 250px;
+  }
+}
+
+nav {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#links {  
+  display: flex;
+  width: 65%;  
+  justify-content: space-around;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+  #links {
+    display: none;
+  }
+ #menu {
+    display: block;
+  }
+}
+
+footer {
+    background-color: DimGray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;  
+    display: flex;
+    flex-direction: column;
+  }
+  
+address { 
+    font-style: normal;
+}
+  
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+@media (max-width: 500px) {
+    #social {
+      flex-direction: column;
+    }
+}
+  
+#social img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+  
+@media (max-width: 500px) {
+    #social img{
+      width: 30px;
+      height: 30px;
+    }
+}
+  
+@media (max-width: 500px) {
+    #social p{
+      font-size: 0.8em;
+    }
+}
+
+#main h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    text-align: center; 
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color: white;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    text-align: center; 
+    text-transform: uppercase;
+    color: white;
+}
+
+.search {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: darkgray;
+    border: 1.5px solid rgb(87, 87, 87);
+    border-radius: 10px;
+    width: 65%;
+    height: 25px;    
+    padding: 2px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#preferiti {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    margin-left: 25px;
+}
+
+#grid, #sezPreferiti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex {
+    width: calc(32.5% - 40px);
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+
+#grid p, #sezPreferiti p {
+    margin-left: 0px;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+}
+#sezPreferiti h1 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+#grid h1{
+    width: 90%;
+    font-size: 1.5em;
+    text-align: left;
+    color: black;
+}
+
+.preferiti {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.flex strong {
+    color: black;
+    font-size: 1.3em;
+}
+
+.hidden {
+    display: none;
+}
